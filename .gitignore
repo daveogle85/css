@@ -6,3 +6,4 @@
 *.code-workspace
 my-app/node_modules/*
 my-app/public/*
+node_modules/

@@ -16,7 +16,7 @@ class ChildComponent extends React.Component<ChildComponentProps, ChildComponent
     
     render() {
         return (
-            <div className={`child-component ${this.props.title.toLowerCase}${this.state.toggle ? ' toggled' : ''}`}>
+            <div className={`child-component ${this.props.title.replace(/\s/g, "-").toLowerCase()}${this.state.toggle ? ' toggled' : ''}`}>
                 <h2>{this.props.title}</h2>
                 <button className="button-one" onClick={this.onButtonOneClick}>Toggle Style</button>
                 <button className="button-one">Do nothing</button>

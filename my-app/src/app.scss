@@ -1,0 +1,18 @@
+@import 'components/sassy.scss';
+
+$toggleColour: pink;
+
+.child-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .component-the-first {
+        @include childComponet($toggleColour);
+        width: 200px;
+    }
+
+    .component-the-second {
+        @include childComponet(purple);
+    }
+}

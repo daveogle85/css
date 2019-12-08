@@ -3,7 +3,12 @@ import React from 'react';
 import logo from './logo.svg';
 
 import './App.css';
-import './pure.css';
+
+// Test css
+// import './pure.css';
+
+// Test scss
+import './app.scss';
 
 const App: React.FC = () => {
   return (
