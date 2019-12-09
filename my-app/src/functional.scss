@@ -1,0 +1,37 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.border-white {
+  border: 2px solid white;
+}
+
+.m1 {
+  margin: 4px;
+}
+
+.m2 {
+  margin: 8px;
+}
+
+.ml3 {
+  margin-left: 20px;
+}
+
+.background-color-purple {
+  background-color: purple;
+}
+
+.mlr5 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
