@@ -1,5 +1,5 @@
-// import ChildComponent from "components/child";
-import ChildComponent from "components/funcChild";
+import ChildComponent from "components/child";
+// import ChildComponent from "components/funcChild";
 import React from "react";
 import classnames from "classnames";
 import logo from "./logo.svg";
@@ -13,7 +13,7 @@ import "./App.css";
 import "./app.scss";
 
 // Test functional css
-import "./functional.scss";
+// import "./functional.scss";
 
 const App: React.FC = () => {
   return (
@@ -24,12 +24,12 @@ const App: React.FC = () => {
           <h3>CSS Test</h3>
         </span>
       </header>
-      {/* <div className="child-container"> */}
-      <div
+      <div className="child-container">
+        {/* <div
         className={classnames(
           "flex-column justify-content-center align-content-center"
         )}
-      >
+      > */}
         <ChildComponent title="Component the first" />
         <ChildComponent title="Component the second" />
       </div>
