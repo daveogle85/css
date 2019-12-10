@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -34,4 +38,8 @@
 .mlr5 {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.p2 {
+  padding: 8px;
 }

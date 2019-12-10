@@ -20,7 +20,7 @@ class FuncChildComponent extends React.Component<
   render() {
     return (
       <div
-        className={classnames("border-white flex-column m2 mlr5", {
+        className={classnames("border-white flex-column m2 p2 mlr5", {
           "background-color-purple": this.state.toggle
         })}
       >

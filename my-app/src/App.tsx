@@ -1,8 +1,7 @@
 // import ChildComponent from "components/child";
-// import ChildComponent from "components/funcChild";
-import ChildComponent from "components/emotionChild";
-/** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import ChildComponent from "components/funcChild";
+// import ChildComponent from "components/emotionChild";
+// import { css, jsx } from "@emotion/core";
 import React from "react";
 // import classnames from "classnames";
 import logo from "./logo.svg";
@@ -16,12 +15,12 @@ import "./App.css";
 import "./app.scss";
 
 // Test functional css
-// import "./functional.scss";
+import "./functional.scss";
 
 // Test Emotion
-const secondChildStyle = css`
-  width: 350px;
-`;
+// const secondChildStyle = css`
+//   width: 350px;
+// `;
 
 const App: React.FC = () => {
   return (
@@ -32,14 +31,15 @@ const App: React.FC = () => {
           <h3>CSS Test</h3>
         </span>
       </header>
-      <div className="child-container">
+      <div className="flex justify-content-center align-content-center p2">
         {/* <div
         className={classnames(
           "flex-column justify-content-center align-content-center"
         )}
       > */}
         <ChildComponent title="Component the first" />
-        <ChildComponent title="Component the second" style={secondChildStyle} />
+        <ChildComponent title="Component the second" />
+        {/* <ChildComponent title="Component the second" style={secondChildStyle} /> */}
       </div>
     </div>
   );
