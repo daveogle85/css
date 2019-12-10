@@ -1,31 +1,31 @@
 $border: white;
 
 @mixin childElement {
-    margin: 8px 8px 8px 20px;
-    width: 150px;
-};
-
-@mixin button {
-    @include childElement; 
+  margin: 8px 8px 8px 20px;
+  width: 150px;
 }
 
-@mixin childComponet($toggleColour) {
-    border: 2px solid $border;
-    width: 600px;
-    margin: 8px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
+@mixin button {
+  @include childElement;
+}
 
-    button {
-        @include button
-    }
-    
-    input {
-        @include childElement
-    }
+@mixin childComponent($toggleColour) {
+  border: 2px solid $border;
+  width: 600px;
+  margin: 8px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
 
-    &.toggled {
-        background-color: $toggleColour;
-    }
+  button {
+    @include button;
+  }
+
+  input {
+    @include childElement;
+  }
+
+  &.toggled {
+    background-color: $toggleColour;
+  }
 }

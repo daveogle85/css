@@ -1,18 +1,18 @@
-@import 'components/sassy.scss';
+@import "components/sassy.scss";
 
 $toggleColour: pink;
 
 .child-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
-    .component-the-first {
-        @include childComponet($toggleColour);
-        width: 200px;
-    }
+  .component-the-first {
+    @include childComponent($toggleColour);
+    width: 200px;
+  }
 
-    .component-the-second {
-        @include childComponet(purple);
-    }
+  .component-the-second {
+    @include childComponent(purple);
+  }
 }
