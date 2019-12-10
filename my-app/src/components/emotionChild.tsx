@@ -11,8 +11,6 @@ type EmotionChildComponentState = {
   toggle: boolean;
 };
 
-// CSS
-
 const inputStyle = css`
   margin: 8px 8px 8px 20px;
   width: 150px;

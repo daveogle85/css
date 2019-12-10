@@ -33,11 +33,6 @@ const App: React.FC = () => {
         </span>
       </header>
       <div className="child-container">
-        {/* <div
-        className={classnames(
-          "flex-column justify-content-center align-content-center"
-        )}
-      > */}
         <ChildComponent title="Component the first" />
         <ChildComponent title="Component the second" style={secondChildStyle} />
       </div>
